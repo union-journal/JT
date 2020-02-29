@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='style.css') }}"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{{ url_for('static',filename='action.js') }}"></script>
+    <title>CANNE</title>
+    <script type="text/javascript">
+      if (screen.width <= 720) {
+        window.location.href = "http://unionjournal.space/mobile/";
+      }
+    </script>
+  </head>
+
+  <body class="dragscroll">
+    <div class="top">
+      <input type="checkbox" id="tag-menu" />
+      <label class="info" for="tag-menu">
+        ?
+      </label>
+      <div class="drawer">
+        <div id = "whole">
+          <p id = "bar_title">
+            Joseph T Colonel <br/>
+            <br/>
+            Autoencoding Neural Networks as Musical Audio Synthesizers <br/>
+          </p>
+          <p id = "main_text">
+            This synthesizer was developed by Joseph T Colonel in the completion of his master’s thesis, Autoencoding Neural Networks as Musical Audio Synthesizers, at The Cooper Union in 2018. He worked under the advisement of Professor Sam Keene in developing the project, which uses deep learning, specifically an autoencoder architecture, and digital signal processing techniques. JT is currently researching audio and artificial intelligence towards the completion of his PhD at The Queen Mary University in London. <br />
+           <br />
+           A synthesizer is an electronic musical instrument that generates an audio signal based on a given input. Traditionally, a synthesizer will create a new sound through the use of a number of methods including frequency modulation, additive, and subtractive synthesis. This project utilizes a machine learning model (autoencoder) as a method of creating sounds. Specifically, the synthesizer will sample from the latent space of the autoencoder and output a new sound.  <br />
+            <br />
+           This project is interactive and contains audio, please ensure that the volume on your computer is turned on.  <br />
+            <br />
+            This project allows you to choose a position in the latent space and explore the effects of the autoencoding synthesizer.  <br />
+            <br />
+            First, move the magnets in any configuration on the screen. They each control one parameter of the latent space representation of the autoencoding synthesizer.  <br />
+             <br />
+           Once the configuration is complete, click the “run” button. This will call the neural net and send the locations of each of the magnets through the synthesizer. The synthesizer will use these positions to sample from a specific place in the latent space and will return a new synthesized sound.  <br />
+            <br />
+            To hear the output sound, please press “play”. <br />
+             <br />
+           You can further manipulate and re run the audio signal through the synthesizer to experiment with the effects of each parameter.  <br />
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- the rest of the page -->
+    <img src="{{url_for('static', filename='atributes/fridge-door-texture-3.jpg')}}" id="bg" />
+
+    <img src="{{url_for('static', filename='atributes/2newJT-POPUP-01.png')}}" id="popup" />
+
+    <div id="avo">
+      <div id="avoheader">
+        <img src="{{url_for('static', filename='atributes/avocado-01.png')}}" id="mag1" />
+      </div>
+    </div>
+
+    <div id="beer">
+      <div id="beerheader">
+        <img src="{{url_for('static', filename='atributes/beer-01.png')}}" id="mag2" />
+      </div>
+    </div>
+
+    <div id="boot">
+      <div id="bootheader">
+        <img src="{{url_for('static', filename='atributes/boot-01.png')}}" id="mag3" />
+      </div>
+    </div>
+
+    <div id="greene">
+      <div id="greeneheader">
+        <img src="{{url_for('static', filename='atributes/greenE-01.png')}}" id="mag4" />
+      </div>
+    </div>
+
+    <div id="dragonfruit">
+      <div id="dragonfruitheader">
+        <img src="{{url_for('static', filename='atributes/dragonfruit-01.png')}}" id="mag5" />
+      </div>
+    </div>
+
+    <div id="ducks">
+      <div id="ducksheader">
+        <img src="{{url_for('static', filename='atributes/ducks-01.png')}}" id="mag6" />
+      </div>
+    </div>
+
+    <div id="kanga">
+      <div id="kangaheader">
+        <img src="{{url_for('static', filename='atributes/kangaroo-01.png')}}" id="mag7" />
+      </div>
+    </div>
+
+    <div id="fruit">
+      <div id="fruitheader">
+        <img src="{{url_for('static', filename='atributes/fruit-01.png')}}" id="mag8" />
+      </div>
+    </div>
+
+    <div id="london">
+      <div id="londonheader">
+        <img src="{{url_for('static', filename='atributes/london-01.png')}}" id="mag9" />
+      </div>
+    </div>
+
+    <div id="mustard">
+      <div id="mustardheader">
+        <img src="{{url_for('static', filename='atributes/mustard-01.png')}}" id="mag10" />
+      </div>
+    </div>
+
+    <div id="pasta">
+      <div id="pastaheader">
+        <img src="{{url_for('static', filename='atributes/pasta-01.png')}}" id="mag11" />
+      </div>
+    </div>
+
+    <div id="popsicle">
+      <div id="popsicleheader">
+        <img src="{{url_for('static', filename='atributes/popsicle-01.png')}}" id="mag12" />
+      </div>
+    </div>
+
+    <div id="rubberducky">
+      <div id="rubberduckyheader">
+        <img src="{{url_for('static', filename='atributes/rubberducky-01.png')}}" id="mag13" />
+      </div>
+    </div>
+
+    <div id="sun">
+      <div id="sunheader">
+        <img src="{{url_for('static', filename='atributes/sun-01.png')}}" id="mag14" />
+      </div>
+    </div>
+
+    <div id="snake">
+      <div id="snakeheader">
+        <img src="{{url_for('static', filename='atributes/pinksnake-01.png')}}" id="mag15" />
+      </div>
+    </div>
+
+    <div id="run">
+      <img src="{{url_for('static', filename='atributes/RUN-01.png')}}" id="run_icon" />
+    </div>
+
+    <div id="play">
+      <img src="{{url_for('static', filename='atributes/play-01.png')}}" id="play_icon" />
+      <!-- <audio id="audio"></audio> -->
+    </div>
+
+    <div id="pause">
+      <img src="{{url_for('static', filename='atributes/pause-01.png')}}" id="pause_icon" />
+    </div>
+
+    <audio id="audioelement" controls>
+       <source id="source" src="" type="audio/wav">
+       Your browser does not support the audio element.
+   </audio>
+
+  </body>
+</html>

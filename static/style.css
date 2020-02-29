@@ -1,0 +1,394 @@
+.top {
+  position: fixed;
+  width:50%;
+  z-index: 90;
+}
+
+.info {
+  position: fixed;
+  font-size: 32px;
+  color: black;
+  z-index: 999;
+  top: 10px;
+  right: 10px;
+	padding:0px 0px;
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+  font-family: arial;
+}
+
+#tag-menu {
+	display:none;
+}
+
+
+#tag-menu:checked ~ div.drawer {
+ animation: slide-out 0.5s ease;
+ animation-fill-mode: forwards;
+}
+
+/* linear-gradient(to right, , rgba(255,0,0,0)); */
+.drawer {
+  z-index: 10;
+  background: white;
+	position:fixed;
+  top: 0;
+	right:-500px;
+	height:100%;
+	z-index:100;
+	width:450px;
+	animation: slide-in 0.5s ease;
+	animation-fill-mode: forwards;
+  margin-top: 0px;
+  /* eventually make scroll within a div */
+}
+
+#whole::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: rgba(0,0,0,0);; /* or add it to the track */
+}
+
+#whole::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+#whole {
+  overflow-y: auto;
+  text-align: left;
+  margin-top: 35px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 35px;
+  height: 90%;
+  color: black;
+  font-family: arial;
+}
+
+ #main_text{
+  font-size: 15px;
+  padding-right: 5px;
+}
+
+#bar_title {
+  font-size: 25px;
+  padding-right: 5px;
+}
+
+@keyframes slide-in {
+ from {right: 0px;}
+ to {right: -450px;}
+}
+
+@keyframes slide-out {
+ from {right: -450px;}
+ to {right: 0px;}
+}
+
+body {
+  margin: 0px;
+  padding: 0;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  top: 0px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+
+#bg {
+  z-index: 1;
+  top: 0px;
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+}
+
+
+#avo {
+  z-index: 5;
+  position: absolute;
+  top: 25px;
+  left: 1225px;
+}
+
+#avoheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag1 {
+  width:150px;
+}
+
+#beer {
+  z-index: 5;
+  position: absolute;
+  top: 200px;
+  left: 900px;
+}
+
+#beerheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag2 {
+  width:220px;
+}
+
+#boot {
+  z-index: 5;
+  position: absolute;
+  top: 300px;
+  left: 30px;
+}
+
+#bootheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag3 {
+  width:250px;
+}
+
+#greene {
+  z-index: 5;
+  position: absolute;
+  top: 250px;
+  left: 230px;
+}
+
+#greeneheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag4 {
+  width:175px;
+}
+
+#dragonfruit {
+  z-index: 5;
+  position: absolute;
+  top: 125px;
+  left: 1050px;
+}
+
+#dragonfruitheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag5 {
+  width:250px;
+}
+
+#ducks {
+  z-index: 5;
+  position: absolute;
+  top: 50px;
+  left: 350px;
+}
+
+#ducksheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag6 {
+  width:200px;
+}
+
+#kanga {
+  z-index: 5;
+  position: absolute;
+  top: 145px;
+  left: 1225px;
+}
+
+#kangaheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag7 {
+  width:150px;
+}
+
+#fruit {
+  z-index: 5;
+  position: absolute;
+  top: 50px;
+  left: 1100px;
+}
+
+#fruitheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag8 {
+  width:150px;
+}
+
+#london {
+  z-index: 5;
+  position: absolute;
+  top: 575px;
+  left: 1200px;
+}
+
+#londonheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag9 {
+  width:175px;
+}
+
+#mustard {
+  z-index: 5;
+  position: absolute;
+  top: 30px;
+  left: 650px;
+}
+
+#mustardheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag10 {
+  width:200px;
+}
+
+#pasta {
+  z-index: 5;
+  position: absolute;
+  top: 350px;
+  left: 700px;
+}
+
+#pastaheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag11 {
+  width:250px;
+}
+
+#popsicle {
+  z-index: 5;
+  position: absolute;
+  top: 230px;
+  left: 500px;
+}
+
+#popsicleheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag12 {
+  width:250px;
+}
+
+#rubberducky {
+  z-index: 5;
+  position: absolute;
+  top: 550px;
+  left: 950px;
+}
+
+#rubberduckyheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag13 {
+  width:150px;
+}
+
+#sun {
+  z-index: 5;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+#sunheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag14 {
+  width:250px;
+}
+
+#snake {
+  z-index: 5;
+  position: absolute;
+  top: 500px;
+  left: 600px;
+}
+
+#snakeheader {
+  cursor: move;
+  z-index: 10;
+}
+
+#mag15 {
+  width:350px;
+}
+
+#run {
+  z-index: 5;
+  position: absolute;
+  top: 600px;
+  left: 300px;
+}
+#run_icon {
+  width:250px;
+}
+
+#play {
+  z-index: 5;
+  position: absolute;
+  top: 600px;
+  left: 50px;
+}
+#play_icon {
+  width:150px;
+}
+
+#pause {
+  z-index: 5;
+  position: absolute;
+  top: 600px;
+  left: 150px;
+}
+
+#pause_icon {
+  width:150px;
+}
+
+#audioelement {
+  visibility: hidden;
+}
+
+#popup {
+  position: absolute;
+  z-index: 10;
+  width: 500px;
+  top: 27%;
+  left: 33%;
+
+}

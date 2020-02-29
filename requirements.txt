@@ -1,0 +1,7 @@
+tensorflow
+keras
+numpy
+soundfile
+gunicorn
+scipy
+flask
